@@ -1,32 +1,45 @@
 :root {
     --primary-color:  #23AE8F;
     --secondary-color: #227A91;
-    --accent1-color:#6794B8;
+    --accent1-color: #6794B8;
     --accent2-color:  #00A8A8;
-    --heading-font: 'YourHeadingFont',sans-serif;
+    --heading-font: 'YourHeadingFont', sans-serif;
     --text-font: 'YourTextFont', sans-serif;
 }
 
 body {
-    font-family: var(Times,serif);
+    font-family: var(--text-font);
     color: var(--primary-color);
+    margin: 0;
+    padding: 0;
 }
 
 h1, h2 {
-    font-family: var(Courier,monospace);
+    font-family: var(--heading-font);
     color: var(--secondary-color);
+    margin: 10px 0;
 }
 
 header, footer {
     background-color: var(--accent1-color);
     padding: 10px;
     text-align: center;
+    color: lightblue;
+}
+
+header img {
+    width: 100px;
+}
+
+nav {
+    margin-top: 10px;
 }
 
 nav a {
     margin: 0 15px;
     text-decoration: none;
-    color: var(--secondary-color);
+    color: black;
+    font-weight: bold;
 }
 
 .hero {
@@ -45,9 +58,11 @@ nav a {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    color: black;
+    color:lightcyan;
     background-color: rgba(0, 0, 0, 0.5);
-    padding: 10px;
+    padding: 20px;
+    font-size: 2em;
+    width: 80px;
 }
 
 .hero article {
@@ -56,11 +71,35 @@ nav a {
     left: 20px;
     background-color: rgba(255, 255, 255, 0.7);
     padding: 10px;
+    width: 300px;
+}
+
+section {
+    margin: 20px;
+}
+
+section h2 {
+    border-bottom: 2px solid var(--secondary-color);
+    padding-bottom: 10px;
+}
+
+section img {
+    width: 50%;
+    height: auto;
+    margin: 10px 0;
+}
+
+footer p {
+    margin: 10px 0;
 }
 
 footer a img {
-    width: 5%;
-    height: 5%;
+    width: 30px;
+    height: 30px;
     margin: 0 10px;
-    text-decoration: aout;
+}
+
+footer a {
+    color: white;
+    text-decoration: none;
 }
