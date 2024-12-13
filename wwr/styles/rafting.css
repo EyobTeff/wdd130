@@ -1,45 +1,37 @@
-
 body {
-    font-family: 'roboto', sans-serif;
-    line-height: 1.6;
-    margin: 0;
-    padding: 0;
-    background-color: #f4f4f4;
+    font-family: 'Roboto', sans-serif;
+    background-color: #f8f8f8;
     color: #333;
 }
 
-
 header {
-    background: #333;
-    color: #fff;
+    text-align: center;
     padding: 20px;
-    text-align: center;
+    background-color: #4CAF50; /* Contrast-enhancing background color */
+    color: white;
 }
 
-header h1 {
-    margin: 0;
-}
-
-
-nav {
-    background: #444;
-    color: #fff;
+nav ul {
+    list-style-type: none;
     padding: 0;
-    text-align: center;
 }
 
-nav a {
-    color: #fff;
-    margin: 0 1rem;
-    text-decoration: none;
-}
-
-nav a:hover {
-    text-decoration: underline;
+nav ul li {
     display: inline;
     margin-right: 10px;
 }
 
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    background-color: #333; /* Contrast-enhancing background color */
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+nav ul li a:hover {
+    background-color: #555; /* Ensure sufficient contrast on hover */
+}
 
 #google-map {
     width: 100%;
@@ -47,111 +39,70 @@ nav a:hover {
     border: none;
 }
 
-main {
-    padding: 1rem;
-    background: #fff;
-}
-
-main h1, main h2 {
-    color: #444;
-}
-
-#company-info, #employees, #contact-form {
-    margin-bottom: 2rem;
-}
-
-#company-info p, #contact-form p {
-    margin: 0.5rem 0;
-}
-
-
-#company-info iframe {
-    width: 100%;
-    height: 300px;
-    border: none;
-    margin-top: 1rem;
-}
-
-
-#employees {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-}
-
 #employees figure {
-    margin: 1rem;
+    display: inline-block;
+    margin: 20px;
     text-align: center;
 }
 
 #employees img {
-    max-width: 100px;
+    width: 150px;
+    height: 150px;
     border-radius: 50%;
 }
 
-#employees figcaption {
-    margin-top: 0.5rem;
-    font-weight: bold;
+#contact-form {
+    margin: 20px 0;
 }
-
 
 #contact-form form {
-    display: flex;
-    flex-direction: column;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
 }
 
-#contact-form label, #contact-form input, #contact-form textarea, #contact-form fieldset {
-    margin-bottom: 1rem;
+#contact-form label {
+    grid-column: 1 / 3;
 }
 
-#contact-form input[type="text"], #contact-form input[type="email"], #contact-form textarea {
+#contact-form input[type="text"],
+#contact-form input[type="email"],
+#contact-form textarea {
     width: 100%;
-    padding: 0.5rem;
-    border: 1px solid #ccc;
-    border-radius: 4px;
+    padding: 10px;
+    margin-bottom: 10px;
 }
 
 #contact-form fieldset {
-    border: 1px solid #ccc;
-    padding: 1rem;
-    border-radius: 4px;
-}
-
-#contact-form input[type="checkbox"] {
-    margin-right: 0.5rem;
+    grid-column: 1 / 3;
 }
 
 #contact-form button {
-    background: #444;
-    color: #fff;
-    padding: 0.5rem 1rem;
+    grid-column: 1 / 3;
+    padding: 10px;
+    background-color: #4CAF50;
+    color: white;
     border: none;
-    border-radius: 4px;
-    cursor: pointer;
+    border-radius: 5px;
 }
 
 #contact-form button:hover {
-    background: #333;
+    background-color: #45a049;
 }
 
-.social a img {
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #333; /* Contrast-enhancing background color */
+    color: white;
+}
+
+footer .social a img {
     width: 32px;
     height: 32px;
     margin: 0 5px;
 }
 
-
-footer {
-    text-align: center;
-    padding: 20px;
-    background-color: #f1f1f1;
-}
-
-footer a {
-    color: #fff;
-    text-decoration: underline;
-}
-
-footer a:hover {
-    color: #ccc;
+a {
+    color: #4CAF50; /* Ensure link color is sufficiently contrasting */
 }
