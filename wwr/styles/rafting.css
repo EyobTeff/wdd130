@@ -102,3 +102,17 @@ footer .social a img {
     width: 30px;
     margin: 0 10px;
 }
+
+.wireframe {
+    margin-top: 2em;
+    text-align: center;
+}
+
+.wireframe img {
+    max-width: 100%;
+    height: auto;
+    border: 1px solid #ddd;
+    padding: 10px;
+    background: #fff;
+}
+
