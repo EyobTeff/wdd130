@@ -21,6 +21,33 @@
         </nav>
     </header>
     <main>
+        <section class="company-info">
+            <h2>Contact Information</h2>
+            <p>Address: 477 s 3rd w sugar city idaho, USA </p>
+            <p>Phone: (208)757 7074</p>
+            <p>Email: info@splashzonerafting.com</p>
+            <div class="map">
+                <h3>Our Location</h3>
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d2876.4444255876597!2d-111.75182392231574!3d43.86734276096167!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sus!4v1734241050813!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>"
+                    width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            </div>
+        </section>
+        <section class="employee-profiles">
+            <h2>Our Team</h2>
+            <div class="profile">
+                <img src="images/employee 1.jpg" alt="Employee 1">
+                <p>kolob T, Lead Guide</p>
+            </div>
+            <div class="profile">
+                <img src="images/employee 2.jpg" alt="Employee 2">
+                <p>Hyrum T, Operations Manager</p>
+            </div>
+            <div class="profile">
+                <img src="images/employee 3.jpg" alt="Employee 3">
+                <p>Daisy T, Customer Service</p>
+            </div>
+        </section>
         <section class="contact-form">
             <h2>Contact Us</h2>
             <form action="/submit_contact" method="post">
@@ -28,8 +55,15 @@
                 <input type="text" id="name" name="name" required>
                 <label for="email">Email:</label>
                 <input type="email" id="email" name="email" required>
+                <fieldset>
+                    <legend>Purpose of the message:</legend>
+                    <label><input type="radio" name="purpose" value="general" required> General Inquiry</label>
+                    <label><input type="radio" name="purpose" value="reservation"> Reservation Question</label>
+                    <label><input type="radio" name="purpose" value="suggestion"> Website Suggestion</label>
+                </fieldset>
                 <label for="message">Message:</label>
                 <textarea id="message" name="message" required></textarea>
+                <label><input type="checkbox" name="newsletter"> Please subscribe me to the monthly newsletter</label>
                 <button type="submit">Send Message</button>
             </form>
         </section>
@@ -41,6 +75,7 @@
             <a href="https://twitter.com"><img src="images/twitter-icon.png" alt="Twitter"></a>
             <a href="https://instagram.com"><img src="images/instagram-icon.png" alt="Instagram"></a>
         </div>
+        <a href="link_to_wireframe_image">Wireframe Design</a>
     </footer>
 </body>
 </html>

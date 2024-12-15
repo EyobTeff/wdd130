@@ -100,3 +100,67 @@ main {
     padding: 10px 20px;
     text-decoration: none;
     border-radius: 5px;
+
+    /* Styles for the company info section */
+.company-info {
+    margin: 20px 0;
+}
+
+.map {
+    margin-top: 20px;
+}
+
+/* Styles for the employee profiles */
+.employee-profiles {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin: 20px 0;
+}
+
+.profile {
+    flex: 1 1 calc(33.333% - 20px);
+    text-align: center;
+}
+
+.profile img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Styles for the contact form */
+.contact-form {
+    margin: 20px 0;
+}
+
+.contact-form form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.contact-form label {
+    font-weight: bold;
+}
+
+.contact-form input[type="text"],
+.contact-form input[type="email"],
+.contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.contact-form button {
+    padding: 10px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.contact-form button:hover {
+    background-color: #0056b3;
+}
