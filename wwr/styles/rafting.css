@@ -366,3 +366,152 @@ main {
 .contact-form button:hover {
     background-color: #0056b3;
 }
+
+/* Base styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Header styles */
+header {
+    background-color: #333;
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+}
+
+header img {
+    max-width: 100px;
+    height: auto;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 10px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+/* Main content styles */
+main {
+    padding: 20px;
+}
+
+/* Hero section styles */
+.hero {
+    position: relative;
+    text-align: center;
+}
+
+.hero img {
+    width: 100%;
+    height: auto;
+}
+
+.hero h1 {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    color: white;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 10px;
+}
+
+.hero article {
+    margin-top: 20px;
+}
+
+.hero article img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.hero article p {
+    text-align: left;
+    padding: 10px;
+}
+
+/* History section styles */
+#history {
+    margin: 20px 0;
+}
+
+#history h2 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+#history p {
+    text-align: left;
+    padding: 10px;
+}
+
+/* Adventures section styles */
+#adventures {
+    margin: 20px 0;
+}
+
+#adventures h2 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+#adventures figure {
+    display: inline-block;
+    margin: 10px;
+    width: calc(33% - 20px);
+    box-sizing: border-box;
+    text-align: center;
+}
+
+#adventures figure img {
+    width: 100%;
+    height: auto;
+}
+
+#adventures figure figcaption {
+    margin-top: 5px;
+    font-size: 0.9em;
+}
+
+/* Footer styles */
+footer {
+    background-color: #333;
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+}
+
+footer p {
+    margin: 0;
+}
+
+footer .social {
+    margin-top: 10px;
+}
+
+footer .social a {
+    margin: 0 5px;
+    display: inline-block;
+}
+
+footer .social img {
+    width: 24px;
+    height: auto;
+}
